@@ -165,6 +165,7 @@ $RECYCLE.BIN/
 # ===================================================
 # Exclude F# project specific directories and files
 # ===================================================
+AssemblyInfo.fs
 
 # NuGet Packages Directory
 packages/
@@ -176,6 +177,7 @@ docs/output/
 temp/
 
 # Test results produced by build
+TestResult.xml
 TestResults.xml
 
 # Nuget outputs
