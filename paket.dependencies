@@ -3,16 +3,17 @@ source https://nuget.org/api/v2
 nuget FSharp.Core redirects: force
 
 group Build
-  source https://nuget.org/api/v2
-  
-  nuget SourceLink.Fake
-  nuget FAKE
-  nuget FSharp.Formatting
+source https://nuget.org/api/v2
 
-  github fsharp/FAKE modules/Octokit/Octokit.fsx
+nuget FSharp.Compiler.Tools
+nuget SourceLink.Fake
+nuget FAKE
+nuget FSharp.Formatting
+
+github fsharp/FAKE modules/Octokit/Octokit.fsx
 
 group Test
-  source https://nuget.org/api/v2
-  
-  nuget NUnit ~> 2
-  nuget NUnit.Runners ~> 2
+source https://nuget.org/api/v2
+
+nuget NUnit ~> 2
+nuget NUnit.Runners ~> 2
