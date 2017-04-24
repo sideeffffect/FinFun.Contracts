@@ -249,9 +249,8 @@ Target "GenerateHelp" (fun _ ->
     CopyFile "docs/content/" "RELEASE_NOTES.md"
     Rename "docs/content/release-notes.md" "docs/content/RELEASE_NOTES.md"
 
-    DeleteFile "docs/content/license.md"
-    CopyFile "docs/content/" "LICENSE.txt"
-    Rename "docs/content/license.md" "docs/content/LICENSE.txt"
+    DeleteFile "docs/content/LICENSE.md"
+    CopyFile "docs/content/" "LICENSE.md"
 
     generateHelp true
 )
@@ -261,9 +260,8 @@ Target "GenerateHelpDebug" (fun _ ->
     CopyFile "docs/content/" "RELEASE_NOTES.md"
     Rename "docs/content/release-notes.md" "docs/content/RELEASE_NOTES.md"
 
-    DeleteFile "docs/content/license.md"
-    CopyFile "docs/content/" "LICENSE.txt"
-    Rename "docs/content/license.md" "docs/content/LICENSE.txt"
+    DeleteFile "docs/content/LICENSE.md"
+    CopyFile "docs/content/" "LICENSE.md"
 
     generateHelp' true true
 )

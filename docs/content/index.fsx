@@ -55,13 +55,12 @@ the project and submit pull requests. If you're adding a new public API, please 
 consider adding [samples][content] that can be turned into a documentation. You might
 also want to read the [library design notes][readme] to understand how it works.
 
-The library is available under Public Domain license, which allows modification and 
-redistribution for both commercial and non-commercial purposes. For more information see the 
-[License file][license] in the GitHub repository. 
+The library is available under LGPLv3+ license
+For more information see the [License file][license] in the GitHub repository. 
 
   [content]: https://github.com/fsprojects/FinFun.Contracts/tree/master/docs/content
   [gh]: https://github.com/fsprojects/FinFun.Contracts
   [issues]: https://github.com/fsprojects/FinFun.Contracts/issues
   [readme]: https://github.com/fsprojects/FinFun.Contracts/blob/master/README.md
-  [license]: https://github.com/fsprojects/FinFun.Contracts/blob/master/LICENSE.txt
+  [license]: https://github.com/fsprojects/FinFun.Contracts/blob/master/LICENSE.md
 *)
