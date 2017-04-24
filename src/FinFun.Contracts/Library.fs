@@ -1,4 +1,4 @@
-﻿namespace FSharp.ProjectTemplate
+namespace FinFun.Contracts
 
 /// Documentation for my library
 ///

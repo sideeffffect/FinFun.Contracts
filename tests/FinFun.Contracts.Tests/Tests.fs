@@ -1,6 +1,6 @@
-﻿module FSharp.ProjectScaffold.Tests
+module FinFun.Contracts.Tests
 
-open FSharp.ProjectTemplate
+open FinFun.Contracts
 open NUnit.Framework
 
 [<Test>]

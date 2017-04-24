@@ -1,0 +1,25 @@
+type project
+title
+    FinFun.Contracts
+owners
+    Ondra Pelech
+authors 
+    Ondra Pelech
+projectUrl
+    https://github.com/sideeffffect/FinFun.Contracts
+iconUrl
+    https://raw.githubusercontent.com/sideeffffect/FinFun.Contracts/master/docs/files/img/logo.png
+licenseUrl
+    https://github.com/sideeffffect/FinFun.Contracts/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2015
+tags
+    finance contract fsharp
+summary
+    Financial contracts library
+description
+    Financial contracts library in F#
+
+
