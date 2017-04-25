@@ -1,6 +1,8 @@
 source https://nuget.org/api/v2
 
 nuget FSharp.Core redirects: force
+nuget FSharpx.Extras
+nuget NodaTime
 
 group Build
 source https://nuget.org/api/v2
@@ -15,5 +17,6 @@ github fsharp/FAKE modules/Octokit/Octokit.fsx
 group Test
 source https://nuget.org/api/v2
 
+nuget FsUnit
 nuget NUnit
 nuget NUnit.Console
