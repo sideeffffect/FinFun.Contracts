@@ -18,5 +18,5 @@ group Test
 source https://nuget.org/api/v2
 
 nuget FsUnit
-nuget NUnit
-nuget NUnit.Console
+nuget NUnit redirects: force
+nuget NUnit.ConsoleRunner

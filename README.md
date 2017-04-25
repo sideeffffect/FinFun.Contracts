@@ -9,7 +9,7 @@ Financial contracts library in F#
 
 Mono | .NET
 ---- | ----
-[![Mono CI Build Status](https://img.shields.io/travis/sideeffffect/FinFun.Contracts/master.svg)](https://travis-ci.org/sideeffffect/FinFun.Contracts) | [![.NET Build Status](https://img.shields.io/appveyor/ci/sideeffffect/FinFun.Contracts/master.svg)](https://ci.appveyor.com/project/sideeffffect/FinFun.Contracts)
+[![Mono CI Build Status](https://img.shields.io/travis/sideeffffect/FinFun.Contracts/master.svg)](https://travis-ci.org/sideeffffect/FinFun.Contracts) | [![.NET Build Status](https://img.shields.io/appveyor/ci/sideeffffect/finfun-contracts/master.svg)](https://ci.appveyor.com/project/sideeffffect/finfun-contracts)
 
 ## License
 
