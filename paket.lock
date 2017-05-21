@@ -1,7 +1,7 @@
 NUGET
   remote: https://www.nuget.org/api/v2
     FSharp.Control.AsyncSeq (2.0.12)
-    FSharp.Core (4.1.12) - redirects: force
+    FSharp.Core (4.1.17) - redirects: force
       System.Collections (>= 4.0.11) - framework: >= netstandard16
       System.Console (>= 4.0) - framework: >= netstandard16
       System.Diagnostics.Debug (>= 4.0.11) - framework: >= netstandard16
@@ -29,7 +29,7 @@ NUGET
     FSharpx.Async (1.13.2)
       FSharp.Control.AsyncSeq
       FSharp.Core
-    FSharpx.Collections (1.15.2)
+    FSharpx.Collections (1.16)
       FSharp.Core
     FSharpx.Extras (2.2.1)
       FSharpx.Async
@@ -85,12 +85,12 @@ NUGET
       System.Threading.Timer (>= 4.3) - framework: >= net451, >= netstandard12
       System.Xml.ReaderWriter (>= 4.3) - framework: >= netstandard10
       System.Xml.XDocument (>= 4.3) - framework: >= netstandard10
-    NodaTime (2.0)
+    NodaTime (2.0.1)
       NETStandard.Library (>= 1.6.1) - framework: >= netstandard13
       System.Runtime.Serialization.Xml (>= 4.1.1) - framework: >= netstandard13
-    runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - framework: >= netstandard13
-    runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - framework: >= netstandard13
-    runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - framework: >= netstandard13
+    runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - framework: >= netstandard13
+    runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - framework: >= netstandard13
+    runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - framework: >= netstandard13
     runtime.native.System (4.3) - framework: >= netstandard13
       Microsoft.NETCore.Platforms (>= 1.1)
       Microsoft.NETCore.Targets (>= 1.1)
@@ -102,25 +102,25 @@ NUGET
       Microsoft.NETCore.Targets (>= 1.1)
     runtime.native.System.Security.Cryptography.Apple (4.3) - framework: >= netstandard16
       runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple (>= 4.3)
-    runtime.native.System.Security.Cryptography.OpenSsl (4.3) - framework: >= netstandard13
-      runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-    runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - framework: >= netstandard13
-    runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - framework: >= netstandard13
+    runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - framework: >= netstandard13
+      runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+    runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - framework: >= netstandard13
+    runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - framework: >= netstandard13
     runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple (4.3) - framework: >= netstandard16
-    runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - framework: >= netstandard13
-    runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - framework: >= netstandard13
-    runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - framework: >= netstandard13
-    runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - framework: >= netstandard13
-    runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - framework: >= netstandard13
+    runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - framework: >= netstandard13
+    runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - framework: >= netstandard13
+    runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - framework: >= netstandard13
+    runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - framework: >= netstandard13
+    runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - framework: >= netstandard13
     System.AppContext (4.3) - framework: >= netstandard13
       System.Runtime (>= 4.3) - framework: dnxcore50, netstandard13, >= netstandard16
     System.Buffers (4.3) - framework: >= netstandard13
@@ -154,7 +154,7 @@ NUGET
       Microsoft.NETCore.Platforms (>= 1.1) - framework: dnxcore50, netstandard10, >= netstandard13
       Microsoft.NETCore.Targets (>= 1.1) - framework: dnxcore50, netstandard10, >= netstandard13
       System.Runtime (>= 4.3) - framework: dnxcore50, netstandard10, >= netstandard13
-    System.Diagnostics.DiagnosticSource (4.3) - framework: netstandard13, >= netstandard16
+    System.Diagnostics.DiagnosticSource (4.3.1) - framework: netstandard13, >= netstandard16
       System.Collections (>= 4.3) - framework: netstandard11, >= netstandard13
       System.Diagnostics.Tracing (>= 4.3) - framework: netstandard11, >= netstandard13
       System.Reflection (>= 4.3) - framework: netstandard11, >= netstandard13
@@ -260,7 +260,7 @@ NUGET
       System.Reflection.Extensions (>= 4.3) - framework: dnxcore50, >= netstandard13
       System.Resources.ResourceManager (>= 4.3) - framework: dnxcore50, >= netstandard13
       System.Runtime (>= 4.3) - framework: dnxcore50, netstandard10, >= netstandard13
-    System.Net.Http (4.3.1) - framework: >= netstandard13
+    System.Net.Http (4.3.2) - framework: >= netstandard13
       Microsoft.NETCore.Platforms (>= 1.1) - framework: dnxcore50, netstandard13, >= netstandard16
       Microsoft.Win32.Primitives (>= 4.3) - framework: netstandard13
       runtime.native.System (>= 4.3) - framework: >= netstandard16
@@ -282,7 +282,7 @@ NUGET
       System.Runtime.Handles (>= 4.3) - framework: netstandard13, >= netstandard16
       System.Runtime.InteropServices (>= 4.3) - framework: dnxcore50, netstandard13, >= netstandard16
       System.Security.Cryptography.Algorithms (>= 4.3) - framework: >= netstandard16
-      System.Security.Cryptography.Encoding (>= 4.3) - framework: >= netstandard16
+      System.Security.Cryptography.Encoding (>= 4.3) - framework: netstandard13, >= netstandard16
       System.Security.Cryptography.OpenSsl (>= 4.3) - framework: >= netstandard16
       System.Security.Cryptography.Primitives (>= 4.3) - framework: >= netstandard16
       System.Security.Cryptography.X509Certificates (>= 4.3) - framework: >= net46, dnxcore50, netstandard13, >= netstandard16
@@ -579,7 +579,7 @@ NUGET
       Microsoft.NETCore.Platforms (>= 1.1) - framework: dnxcore50, >= netstandard12
       Microsoft.NETCore.Targets (>= 1.1) - framework: dnxcore50, >= netstandard12
       System.Runtime (>= 4.3) - framework: dnxcore50, >= netstandard12
-    System.ValueTuple (4.3) - redirects: force, framework: >= net10, netstandard10, netstandard11, netstandard12, netstandard13, netstandard14, netstandard15
+    System.ValueTuple (4.3.1) - redirects: force, framework: >= net10, netstandard10, netstandard11, netstandard12, netstandard13, netstandard14, netstandard15
       System.Collections (>= 4.3) - framework: >= netstandard10
       System.Resources.ResourceManager (>= 4.3) - framework: >= netstandard10
       System.Runtime (>= 4.3) - framework: >= netstandard10
@@ -645,9 +645,9 @@ NUGET
 GROUP Build
 NUGET
   remote: https://www.nuget.org/api/v2
-    FAKE (4.58.6)
+    FAKE (4.61.2)
     FSharp.Compiler.Service (2.0.0.6)
-    FSharp.Compiler.Tools (4.1.5)
+    FSharp.Compiler.Tools (4.1.17)
     FSharp.Formatting (2.14.4)
       FSharp.Compiler.Service (2.0.0.6)
       FSharpVSPowerTools.Core (>= 2.3 < 2.4)
@@ -664,12 +664,12 @@ NUGET
     SourceLink.Fake (1.1)
 GITHUB
   remote: fsharp/FAKE
-    modules/Octokit/Octokit.fsx (dad2dec00064233e9742b458d96fe64708f3be8a)
+    modules/Octokit/Octokit.fsx (1ada6a9c84aada940bd7e6a7b63c0dc62e2fa56e)
       Octokit (>= 0.20)
 GROUP Test
 NUGET
   remote: https://www.nuget.org/api/v2
-    FSharp.Core (4.1.12) - framework: >= net10, >= netstandard10
+    FSharp.Core (4.1.17) - framework: >= net10, >= netstandard10
       System.Collections (>= 4.0.11) - framework: >= netstandard16
       System.Console (>= 4.0) - framework: >= netstandard16
       System.Diagnostics.Debug (>= 4.0.11) - framework: >= netstandard16
@@ -754,9 +754,9 @@ NUGET
       NETStandard.Library (>= 1.6) - framework: >= net463, >= netstandard16
       System.Runtime.Loader (>= 4.0) - framework: >= net463, >= netstandard16
     NUnit.ConsoleRunner (3.6.1)
-    runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - redirects: force, framework: >= net10, >= netstandard16
-    runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - redirects: force, framework: >= net10, >= netstandard16
-    runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - redirects: force, framework: >= net10, >= netstandard16
+    runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - redirects: force, framework: >= net10, >= netstandard16
+    runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - redirects: force, framework: >= net10, >= netstandard16
+    runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - redirects: force, framework: >= net10, >= netstandard16
     runtime.native.System (4.3) - redirects: force, framework: >= net10, >= netstandard16
       Microsoft.NETCore.Platforms (>= 1.1)
       Microsoft.NETCore.Targets (>= 1.1)
@@ -768,25 +768,25 @@ NUGET
       Microsoft.NETCore.Targets (>= 1.1)
     runtime.native.System.Security.Cryptography.Apple (4.3) - redirects: force, framework: >= net10, >= netstandard16
       runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple (>= 4.3)
-    runtime.native.System.Security.Cryptography.OpenSsl (4.3) - redirects: force, framework: >= net10, >= netstandard16
-      runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-      runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3)
-    runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - redirects: force, framework: >= net10, >= netstandard16
-    runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - redirects: force, framework: >= net10, >= netstandard16
+    runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - redirects: force, framework: >= net10, >= netstandard16
+      runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+      runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (>= 4.3.1)
+    runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - redirects: force, framework: >= net10, >= netstandard16
+    runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - redirects: force, framework: >= net10, >= netstandard16
     runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple (4.3) - redirects: force, framework: >= net10, >= netstandard16
-    runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - redirects: force, framework: >= net10, >= netstandard16
-    runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - redirects: force, framework: >= net10, >= netstandard16
-    runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - redirects: force, framework: >= net10, >= netstandard16
-    runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - redirects: force, framework: >= net10, >= netstandard16
-    runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3) - redirects: force, framework: >= net10, >= netstandard16
+    runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - redirects: force, framework: >= net10, >= netstandard16
+    runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - redirects: force, framework: >= net10, >= netstandard16
+    runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - redirects: force, framework: >= net10, >= netstandard16
+    runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - redirects: force, framework: >= net10, >= netstandard16
+    runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.1) - redirects: force, framework: >= net10, >= netstandard16
     System.AppContext (4.3) - redirects: force, framework: >= net463, >= netstandard16
       System.Runtime (>= 4.3) - framework: dnxcore50, netstandard13, >= netstandard16
     System.Buffers (4.3) - redirects: force, framework: >= net463, >= netstandard16
@@ -820,7 +820,7 @@ NUGET
       Microsoft.NETCore.Platforms (>= 1.1) - framework: dnxcore50, netstandard10, >= netstandard13
       Microsoft.NETCore.Targets (>= 1.1) - framework: dnxcore50, netstandard10, >= netstandard13
       System.Runtime (>= 4.3) - framework: dnxcore50, netstandard10, >= netstandard13
-    System.Diagnostics.DiagnosticSource (4.3) - redirects: force, framework: >= net10, >= netstandard16
+    System.Diagnostics.DiagnosticSource (4.3.1) - redirects: force, framework: >= net10, >= netstandard16
       System.Collections (>= 4.3) - framework: netstandard11, >= netstandard13
       System.Diagnostics.Tracing (>= 4.3) - framework: netstandard11, >= netstandard13
       System.Reflection (>= 4.3) - framework: netstandard11, >= netstandard13
@@ -926,7 +926,7 @@ NUGET
       System.Reflection.Extensions (>= 4.3) - framework: dnxcore50, >= netstandard13
       System.Resources.ResourceManager (>= 4.3) - framework: dnxcore50, >= netstandard13
       System.Runtime (>= 4.3) - framework: dnxcore50, netstandard10, >= netstandard13
-    System.Net.Http (4.3.1) - redirects: force, framework: >= net10, >= netstandard16
+    System.Net.Http (4.3.2) - redirects: force, framework: >= net10, >= netstandard16
       Microsoft.NETCore.Platforms (>= 1.1) - framework: dnxcore50, netstandard13, >= netstandard16
       runtime.native.System (>= 4.3) - framework: >= netstandard16
       runtime.native.System.Net.Http (>= 4.3) - framework: >= netstandard16
@@ -946,7 +946,7 @@ NUGET
       System.Runtime.Handles (>= 4.3) - framework: netstandard13, >= netstandard16
       System.Runtime.InteropServices (>= 4.3) - framework: dnxcore50, netstandard13, >= netstandard16
       System.Security.Cryptography.Algorithms (>= 4.3) - framework: >= netstandard16
-      System.Security.Cryptography.Encoding (>= 4.3) - framework: >= netstandard16
+      System.Security.Cryptography.Encoding (>= 4.3) - framework: netstandard13, >= netstandard16
       System.Security.Cryptography.OpenSsl (>= 4.3) - framework: >= netstandard16
       System.Security.Cryptography.Primitives (>= 4.3) - framework: >= netstandard16
       System.Security.Cryptography.X509Certificates (>= 4.3) - framework: >= net46, dnxcore50, netstandard13, >= netstandard16
@@ -1211,7 +1211,7 @@ NUGET
       Microsoft.NETCore.Platforms (>= 1.1) - framework: dnxcore50, >= netstandard12
       Microsoft.NETCore.Targets (>= 1.1) - framework: dnxcore50, >= netstandard12
       System.Runtime (>= 4.3) - framework: dnxcore50, >= netstandard12
-    System.ValueTuple (4.3) - framework: >= net10, netstandard10, netstandard11, netstandard12, netstandard13, netstandard14, netstandard15
+    System.ValueTuple (4.3.1) - framework: >= net10, netstandard10, netstandard11, netstandard12, netstandard13, netstandard14, netstandard15
       System.Collections (>= 4.3) - framework: >= netstandard10
       System.Resources.ResourceManager (>= 4.3) - framework: >= netstandard10
       System.Runtime (>= 4.3) - framework: >= netstandard10
