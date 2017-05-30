@@ -11,6 +11,10 @@ Mono | .NET
 ---- | ----
 [![Mono CI Build Status](https://img.shields.io/travis/sideeffffect/FinFun.Contracts/master.svg)](https://travis-ci.org/sideeffffect/FinFun.Contracts) | [![.NET Build Status](https://img.shields.io/appveyor/ci/sideeffffect/finfun-contracts/master.svg)](https://ci.appveyor.com/project/sideeffffect/finfun-contracts)
 
+## Inspiration
+
+[contracts.scheming.org](https://web.archive.org/web/20130814194431/http://contracts.scheming.org/)
+
 ## License
 
 LGPLv3+

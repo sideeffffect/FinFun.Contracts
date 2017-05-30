@@ -17,6 +17,7 @@ github fsharp/FAKE modules/Octokit/Octokit.fsx
 group Test
 source https://nuget.org/api/v2
 
+nuget FsCheck.Nunit
 nuget FsUnit
 nuget NUnit redirects: force
 nuget NUnit.ConsoleRunner

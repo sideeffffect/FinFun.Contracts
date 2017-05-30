@@ -1,10 +1,17 @@
-module FinFun.Contracts
+module FinFun.Contracts.Core
 
 open FSharpx.Functional
 open NodaTime
 
-let (-<) a b = a |> b
-let (>-) a b = a <| b    
+
+module Seq =
+    let inline and' (s:seq<bool>) : bool = Seq.forall id s
+
+module Array =
+    let inline and' (a:bool[]) : bool = Array.forall id a
+
+module List =
+    let inline and' (a:List<bool>) : bool = List.forall id a
 
 
 type Currency =
@@ -66,8 +73,6 @@ module PR =
         }
         PR <| timeSlices 1 d
 
-    let date() = dateFrom <| date0()
-
     let map (f : 'a -> 'b) (x:PR<'a>) : PR<'b> =
         match x with PR y -> PR <| Seq.map (RV.map f) y
 
@@ -77,19 +82,17 @@ module PR =
     let map3 (f : 'a -> 'b -> 'c -> 'd) (x:PR<'a>) (y:PR<'b>) (z:PR<'c>) : PR<'d> =
         match x, y, z with PR a, PR b, PR c -> PR <| Seq.map3 (RV.map3 f) a b c
 
-    let cond (b:PR<bool>) (tru:PR<'a>) (fls:PR<'a>) : PR<'a> =
-        map3 (fun i t e -> if i then t else e) b tru fls
+    let take (n:int) (p:PR<'a>) : PR<'a> =
+        match p with
+        | PR rvs -> PR <| Seq.take n rvs
 
-    let inline plus  x y = map2 (fun a b -> a +  b) x y
-    let inline minus x y = map2 (fun a b -> a -  b) x y
-    let inline mult  x y = map2 (fun a b -> a *  b) x y
-    let inline div   x y = map2 (fun a b -> a /  b) x y
-    let inline eq    x y = map2 (fun a b -> a =  b) x y
-    let inline ne    x y = map2 (fun a b -> a <> b) x y
-    let inline lt    x y = map2 (fun a b -> a <  b) x y
-    let inline le    x y = map2 (fun a b -> a <= b) x y
-    let inline gt    x y = map2 (fun a b -> a >  b) x y
-    let inline ge    x y = map2 (fun a b -> a >= b) x y
+    let horizon (p:PR<'a>) : int =
+        match p with
+        | PR rvs -> Seq.length rvs
+
+    let and' (p:PR<bool>) : bool =
+        match p with
+        | PR rvs -> Seq.and' (Seq.map (function RV vs -> Array.and' vs) rvs)
 
 
 // Observable
@@ -113,22 +116,11 @@ module Obs =
 
     let date : Obs<Date> = Obs <| dateFrom
 
-    let inline plus  x y = map2 (fun a b -> a +  b) x y
-    let inline minus x y = map2 (fun a b -> a -  b) x y
-    let inline mult  x y = map2 (fun a b -> a *  b) x y
-    let inline div   x y = map2 (fun a b -> a /  b) x y
-    let inline eq    x y = map2 (fun a b -> a =  b) x y
-    let inline ne    x y = map2 (fun a b -> a <> b) x y
-    let inline lt    x y = map2 (fun a b -> a <  b) x y
-    let inline le    x y = map2 (fun a b -> a <= b) x y
-    let inline gt    x y = map2 (fun a b -> a >  b) x y
-    let inline ge    x y = map2 (fun a b -> a >= b) x y
-
 
 // Contract
 
 [<NoEquality;NoComparison>]
-type Contract =
+type Contract = //private
     | Zero
     | One  of Currency
     | Give of Contract
@@ -155,12 +147,21 @@ module Contract =
 
     let cond    : Obs<bool>  -> Contract -> Contract -> Contract = curry3 Cond
 
-    let scale   : Obs<float> -> Contract -> Contract             = curry Scale
+    let scale   : Obs<float> -> Contract -> Contract             = curry  Scale
 
-    let when'   : Obs<bool>  -> Contract -> Contract             = curry When
+    let when'   : Obs<bool>  -> Contract -> Contract             = curry  When
 
-    let anytime : Obs<bool>  -> Contract -> Contract             = curry Anytime
+    let anytime : Obs<bool>  -> Contract -> Contract             = curry  Anytime
 
-    let until   : Obs<bool>  -> Contract -> Contract             = curry Until
+    let until   : Obs<bool>  -> Contract -> Contract             = curry  Until
 
 
+// Model
+
+type Model =
+    { modelStart : Date
+      disc       : Currency -> (PR<bool> * PR<float>) -> PR<float>
+      exch       : Currency -> Currency -> PR<float>
+      absorb     : Currency -> (PR<bool> * PR<float>) -> PR<float>
+      rateModel  : Currency -> PR<float>
+    }
